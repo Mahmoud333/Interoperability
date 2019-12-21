@@ -16,6 +16,9 @@
 		1E021EC423ACE0240072919C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E021EC323ACE0240072919C /* main.m */; };
 		1E021ECE23ACE0240072919C /* UniversalDependenciesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E021ECD23ACE0240072919C /* UniversalDependenciesTests.m */; };
 		1E021ED923ACE0240072919C /* UniversalDependenciesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E021ED823ACE0240072919C /* UniversalDependenciesUITests.m */; };
+		1E021EE823ACE08A0072919C /* Documentations in Resources */ = {isa = PBXBuildFile; fileRef = 1E021EE723ACE08A0072919C /* Documentations */; };
+		1E021EEC23ACE1790072919C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E021EEB23ACE1790072919C /* View.swift */; };
+		1E021EEE23ACE2840072919C /* SwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E021EED23ACE2840072919C /* SwiftVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		1E021ED423ACE0240072919C /* UniversalDependenciesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniversalDependenciesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E021ED823ACE0240072919C /* UniversalDependenciesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniversalDependenciesUITests.m; sourceTree = "<group>"; };
 		1E021EDA23ACE0240072919C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E021EE723ACE08A0072919C /* Documentations */ = {isa = PBXFileReference; lastKnownFileType = text; path = Documentations; sourceTree = "<group>"; };
+		1E021EEA23ACE1780072919C /* UniversalDependencies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UniversalDependencies-Bridging-Header.h"; sourceTree = "<group>"; };
+		1E021EEB23ACE1790072919C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1E021EED23ACE2840072919C /* SwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +111,16 @@
 		1E021EB023ACE0230072919C /* UniversalDependencies */ = {
 			isa = PBXGroup;
 			children = (
-				1E021EB123ACE0230072919C /* AppDelegate.h */,
-				1E021EB223ACE0230072919C /* AppDelegate.m */,
-				1E021EB423ACE0230072919C /* SceneDelegate.h */,
-				1E021EB523ACE0230072919C /* SceneDelegate.m */,
-				1E021EB723ACE0230072919C /* ViewController.h */,
-				1E021EB823ACE0230072919C /* ViewController.m */,
+				1E021EE723ACE08A0072919C /* Documentations */,
+				1E021EF023ACE4930072919C /* Start */,
+				1E021EE623ACE0660072919C /* ObjectiveC */,
+				1E021EE923ACE1570072919C /* SwiftUI */,
+				1E021EEF23ACE3070072919C /* Swift */,
 				1E021EBA23ACE0230072919C /* Main.storyboard */,
 				1E021EBD23ACE0240072919C /* Assets.xcassets */,
 				1E021EBF23ACE0240072919C /* LaunchScreen.storyboard */,
 				1E021EC223ACE0240072919C /* Info.plist */,
-				1E021EC323ACE0240072919C /* main.m */,
+				1E021EEA23ACE1780072919C /* UniversalDependencies-Bridging-Header.h */,
 			);
 			path = UniversalDependencies;
 			sourceTree = "<group>";
@@ -135,6 +141,43 @@
 				1E021EDA23ACE0240072919C /* Info.plist */,
 			);
 			path = UniversalDependenciesUITests;
+			sourceTree = "<group>";
+		};
+		1E021EE623ACE0660072919C /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				1E021EB123ACE0230072919C /* AppDelegate.h */,
+				1E021EB223ACE0230072919C /* AppDelegate.m */,
+				1E021EB423ACE0230072919C /* SceneDelegate.h */,
+				1E021EB523ACE0230072919C /* SceneDelegate.m */,
+				1E021EB723ACE0230072919C /* ViewController.h */,
+				1E021EB823ACE0230072919C /* ViewController.m */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		1E021EE923ACE1570072919C /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				1E021EEB23ACE1790072919C /* View.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		1E021EEF23ACE3070072919C /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				1E021EED23ACE2840072919C /* SwiftVC.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		1E021EF023ACE4930072919C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				1E021EC323ACE0240072919C /* main.m */,
+			);
+			path = Start;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +247,7 @@
 				TargetAttributes = {
 					1E021EAD23ACE0230072919C = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					1E021EC823ACE0240072919C = {
 						CreatedOnToolsVersion = 11.0;
@@ -243,6 +287,7 @@
 				1E021EC123ACE0240072919C /* LaunchScreen.storyboard in Resources */,
 				1E021EBE23ACE0240072919C /* Assets.xcassets in Resources */,
 				1E021EBC23ACE0230072919C /* Main.storyboard in Resources */,
+				1E021EE823ACE08A0072919C /* Documentations in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +314,8 @@
 			files = (
 				1E021EB923ACE0230072919C /* ViewController.m in Sources */,
 				1E021EB323ACE0230072919C /* AppDelegate.m in Sources */,
+				1E021EEE23ACE2840072919C /* SwiftVC.swift in Sources */,
+				1E021EEC23ACE1790072919C /* View.swift in Sources */,
 				1E021EC423ACE0240072919C /* main.m in Sources */,
 				1E021EB623ACE0230072919C /* SceneDelegate.m in Sources */,
 			);
@@ -439,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
 				INFOPLIST_FILE = UniversalDependencies/Info.plist;
@@ -448,6 +496,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.UniversalDependencies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniversalDependencies/UniversalDependencies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -456,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
 				INFOPLIST_FILE = UniversalDependencies/Info.plist;
@@ -465,6 +517,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.UniversalDependencies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "UniversalDependencies/UniversalDependencies-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -472,6 +526,7 @@
 		1E021EE123ACE0240072919C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
@@ -492,6 +547,7 @@
 		1E021EE223ACE0240072919C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
@@ -512,6 +568,7 @@
 		1E021EE423ACE0240072919C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
 				INFOPLIST_FILE = UniversalDependenciesUITests/Info.plist;
@@ -530,6 +587,7 @@
 		1E021EE523ACE0240072919C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LYKU2NPL99;
 				INFOPLIST_FILE = UniversalDependenciesUITests/Info.plist;
